@@ -360,7 +360,7 @@ html {
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #000000;
     font-family: "Rajdhani", sans-serif;
     height: 100vh;
     height: -webkit-calc(var(--vh, 1vh) * 100);
@@ -562,7 +562,7 @@ body.overflow {
     font-size: 8rem;
     line-height: 1.5;
     text-transform: uppercase;
-    background: -webkit-linear-gradient(45deg, #A1793B, #EEE393, #B1894B);
+    background: -webkit-linear-gradient(353deg, #A1793B, #EEE393, #B1894B);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
@@ -1496,6 +1496,7 @@ body.overflow {
 .bottom-section {
     position: relative;
     padding: 0 0 2rem;
+    margin-bottom: -25px;
 }
 
 .bottom-section .container {
