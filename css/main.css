@@ -1860,7 +1860,7 @@ body.overflow {
 
 @media (min-width: 1024px) {
     .instruction-section {
-        padding: 0 0 20rem 0;
+        padding: 0 0 0 0;
     }
 }
 
@@ -3040,4 +3040,8 @@ body.overflow {
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+.collection-image{
+    height: 300px;
+    width: 300px;
 }
