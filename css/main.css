@@ -2491,6 +2491,7 @@ body.overflow {
     position: relative;
     z-index: 1;
     padding-bottom: 10vw;
+    margin-top: 150px;
 }
 
 @media (min-width: 1920px) {
@@ -2923,7 +2924,6 @@ body.overflow {
 }
 
 
-
 /*codes for the slider*/
 /* Slider */
 
@@ -3042,6 +3042,6 @@ body.overflow {
     display: none;
 }
 .collection-image{
-    height: 300px;
-    width: 300px;
+    height: auto;
+    width: 100%;
 }
