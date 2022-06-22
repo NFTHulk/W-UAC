@@ -36,6 +36,15 @@
     <script src="unpkg.com/regenerator-runtime%400.13.1/runtime.js"></script>
     <script src="peterolson.github.io/BigInteger.js/BigInteger.min.js"></script>
     <script type="text/javascript" src="unpkg.com/web3%401.2.11/dist/web3.min.js"></script>
+
+
+    <!--for bootstrap image slider-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -64,7 +73,7 @@
                 </div>
                 <!--<h1 class="main-title" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true"
                     data-text="Chubb Club">UAC</h1>-->
-                <video width="100%" autoplay controls>
+                <video width="100%" autoplay muted loop controls>
                     <source src="video/intro_video.mp4" type="video/mp4">
                     <source src="video/intro_video.mp4" type="video/ogg">
                     Your browser does not support the video tag.
@@ -113,90 +122,6 @@
                 </div>
             </div>
         </section>
-        <!--<section class="avatar-section">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-                    UAC (United Arab Collection) is a collection of
-                    2,500 utility infused pixel art NFTs inspired by the
-                    UAE.
-                </h2>
-                <div class="avatar-wrap">
-                    <div class="avatar-info">
-                        <p class="sub-text" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true">
-                            Only 10,000 Chubbs muchin' around the Ethereum blockchain</p>
-                        <p class="sub-text text-dark">
-                            Chubb Club holders will recieve access to:
-                        </p>
-                        <ul class="info-list" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" style="color: black">
-                            <li>
-                                Early access to all general community activites, news, and events!
-                            </li>
-                            <li>
-                                To members only Giveaways, challanges, threads, & content!
-                            </li>
-                            <li>
-                                Exclusive in person and virtual meetings, parties, & workouts!
-                            </li>
-                            <li>
-                                Chubb Mart: Exclusive shop to show off your Chubbs on Custom clothing!
-                            </li>
-                            <li>
-                                Early access to our next drop!
-                            </li>
-                            <li>
-                                & much more! We are a community, what we say goes!
-                            </li>
-                        </ul>
-
-                        <p class="sub-text text-dark mt-5">
-                            Chubb Club holders will be awarded:
-                        </p>
-                        <ul class="info-list" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" style="color: black">
-                            <li>
-                                By enagaging in the community! Chance for unannounced giveaways, secret threads, and even a larger role and voice for the direction of our community!
-                            </li>
-                            <li>
-                                Cyber Awards: Chance to earn Ethereum, crypto, NFTs, & more!
-                            </li>
-                            <li>
-                                Tangible Awards: Chance to earn gym memberships, workout equipment, meal plans, custom merch, & more!
-                            </li>
-                            <li>
-                                THE CHUBB CLUB SCHOLARSHIP - Upon selling out, one holder will have the chance to earn a full-ride scholarship valid for any educational services!
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="avatar-img">
-                        <div class="card-wrap">
-                            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-                                <div class="card__wrap">
-                                    <div class="card__img-wrap">
-                                        <div class="card__img"><img src="images/o01.png" alt=""></div>
-                                    </div>
-                                    <button class="card__link btn secondary" type="button">CHUBB C42-V</button>
-                                </div>
-                            </div>
-                            <div class="card" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
-                                <div class="card__wrap">
-                                    <div class="card__img-wrap">
-                                        <div class="card__img"><img src="images/o11.png" alt=""></div>
-                                    </div>
-                                    <button class="card__link btn secondary" type="button">CHUBB C41-V</button>
-                                </div>
-                            </div>
-                            <div class="card" data-aos="fade-up" data-aos-duration="1400" data-aos-once="true">
-                                <div class="card__wrap">
-                                    <div class="card__img-wrap">
-                                        <div class="card__img"><img src="images/o21.png" alt=""></div>
-                                    </div>
-                                    <button class="card__link btn secondary" type="button">CHUBB C39-V</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>-->
 
         <section class="immerse-section" id="game">
             <div class="container">
@@ -248,77 +173,38 @@
                 </div>
             </div>
         </section>
-        <!--<section class="item-section" id="equipment">
-            <div class="container">
-                <div class="item-wrap">
-                    <div class="item">
-                        <div class="item__wrap">
-                            <div class="item__img">
-                                <div class="item-slider">
-                                    <div class="item-slider js-item-slider">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="item-img"><img src="images/1.png" alt=""></div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="item-img"><img src="images/2.png" alt=""></div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="item-img"><img src="images/3.png" alt=""></div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="item-img"><img src="images/5.png" alt=""></div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="item-img"><img src="images/6.png" alt=""></div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="item-img"><img src="images/7.png" alt=""></div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="item-img"><img src="images/8.png" alt=""></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item__descr">
-                                <h2 class="item__title section-title" data-aos="fade-up" data-aos-duration="1100"
-                                    data-aos-once="true">Traits and Rarity</h2>
-                                <p class="item__text" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
-                                    Now the Chubbs must defend their planet and the scientific advances they have
-                                    developed over the centuries. Each Chubb will be given a random set of high-tech
-                                    clothing and defense items in which they will defend their planet. The luckiest ones
-                                    will get unique combinations of suits that will give Chubb a 100% advantage over the
-                                    invaders. </p>
-                                <p class="item__text" data-aos="fade-up" data-aos-duration="1300" data-aos-once="true">
-                                    We have a total of 150+ different variants of equipment and backgrounds in this
-                                    collection so each Chubb is a sight to see!</p><a class="btn primary"
-                                                                                      href="https://discord.gg/HRHRU46K2V"
-                                                                                      target="_blank" data-aos="fade-up"
-                                                                                      data-aos-duration="1400"
-                                                                                      data-aos-once="true">Join the
-                                discord</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>-->
+
         <section class="instruction-section" id="instructions">
             <h2 class="section-title">Collection</h2>
             <p class="instruction-text base-text" style="color: #bf9000">
                 The price of each UAC is 0.1 ETH. There will only be 2500 on the ethereum blockchain!
             </p>
-            <div class="instr-wrap">
+            <!--<div class="instr-wrap">
                 <div class="instr">
                     <div class="instr__wrap">
                         <div class="instr__row" style="background-image: url('images/ss1.png');"></div>
                         <div class="instr__row" style="background-image: url('images/ss2.png');"></div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </section>
+
+        <div class="container">
+            <h2>Our  Partners/ Our Clients</h2>
+            <section class="customer-logos slider">
+                <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+                <div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div>
+                <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+                <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+                <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+                <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+                <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+                <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+                <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+            </section>
+        </div>
+
+
         <section class="map-section" id="roadmap">
             <div class="container">
                 <h2 class="section-title mb-5" style="text-align: center;">The Roadmap</h2>
@@ -426,7 +312,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row team-items text-center">
+                <div class="row team-items text-center" style="align-items: center; justify-content: center;">
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
@@ -447,7 +333,7 @@
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img class="img-fluid" src="images/team-4.jpg" alt="Thumb">
+                                <img class="img-fluid" src="images/team-5.png" alt="Thumb">
                             </div>
                             <div class="info">
                                 <span class="message">
@@ -455,7 +341,8 @@
                                 </span>
                                 <h4>BIPLOB</h4>
                                 <span>@coolname<br>
-                                    description
+                                    inventive artist<br>
+                                    best in nft business
                                 </span>
                             </div>
                         </div>
@@ -602,6 +489,30 @@
 <script src="ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/app.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+    });
+</script>
 </body>
 
 </html>
