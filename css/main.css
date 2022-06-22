@@ -2317,7 +2317,7 @@ body.overflow {
 
 @media (min-width: 1024px) {
     .mint-section {
-        padding: 0 0 10rem 0;
+        padding: 10rem 0 10rem 0;
     }
 }
 
@@ -2531,7 +2531,7 @@ body.overflow {
     width: 100%;
     padding: 2rem;
     background: rgba(10, 13, 13, 0.6);
-    border: 1px solid #bf9000;
+    border: 1px solid #000000;
 }
 
 @media (min-width: 1024px) {
