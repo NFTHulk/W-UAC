@@ -1116,6 +1116,12 @@ body.overflow {
     text-transform: uppercase;
     font-weight: 600;
 }
+.terms{
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 
 .mask {
     position: fixed;
