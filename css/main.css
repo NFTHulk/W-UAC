@@ -554,7 +554,7 @@ body.overflow {
 
 @media (min-width: 1024px) {
     .subtitle {
-        margin-bottom: 4rem;
+        margin-bottom: -4rem;
     }
 }
 
