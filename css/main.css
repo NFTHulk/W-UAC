@@ -3050,3 +3050,26 @@ body.overflow {
     height: auto;
     width: 100%;
 }
+
+
+.roadmap-image{
+    height: 700px;
+    width: 100%;
+
+    background-image: url("../images/roadmap.jpg");
+    background-size: cover;
+}
+
+.roadmap-content{
+    height: 400px;
+    width: 100%;
+}
+
+.roadmap-button{
+    background: black !important;
+    color: #ffd662 !important;
+    border: 1px solid black !important;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 15px;
+}
