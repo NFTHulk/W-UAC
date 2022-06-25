@@ -41,6 +41,74 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <link href="css/main.css" rel="stylesheet" type="text/css">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css'>
+    <style>
+        .slider-image-size{
+            height: 250px;
+            width: 250px;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .swiper-container:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-size: 10% 1px;
+            background-position: -50px;
+            background-repeat: repeat-x;
+            position: absolute;
+            left: -10%;
+            top: 40%;
+            -webkit-animation: line-slide 60s forwards infinite linear;
+            animation: line-slide 60s forwards infinite linear;
+            z-index: 1;
+        }
+        .swiper-container.swiper--bottom:after {
+            animation-direction: reverse;
+        }
+
+        .swiper-wrapper {
+            transition-timing-function: linear !important;
+            position: relative;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 33px;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            position: relative;
+            overflow: hidden;
+            padding: 0 5px;
+        }
+
+        @-webkit-keyframes line-slide {
+            0% {
+                background-position: -5% 0;
+            }
+            100% {
+                background-position: 100% 0;
+            }
+        }
+
+        @keyframes line-slide {
+            0% {
+                background-position: -5% 0;
+            }
+            100% {
+                background-position: 100% 0;
+            }
+        }
+    </style>
 </head>
 <body>
 <div class="wrapper">
@@ -170,46 +238,47 @@
             </p>
         </section>
 
-        <div class="container" style="margin-bottom: 25px;">
-            <section class="customer-logos slider">
-                <div class="slide"><img src="images/scrolling_images/Scroll_1.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_2.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_3.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_4.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_5.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_6.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_7.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_8.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_9.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_10.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_11.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_12.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_13.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_14.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_15.png" class="collection-image"></div>
-            </section>
-        </div>
-
         <div class="container">
-            <section class="customer-logos-1 slider" style="margin-bottom: 50px;">
-                <div class="slide"><img src="images/scrolling_images/Scroll_16.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_17.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_18.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_19.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_20.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_21.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_22.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_23.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_24.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_25.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_26.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_27.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_28.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_29.png" class="collection-image"></div>
-                <div class="slide"><img src="images/scrolling_images/Scroll_30.png" class="collection-image"></div>
-            </section>
-        </div>
+            <div class="swiper-container swiper--top">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_1.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_2.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_3.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_4.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_5.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_6.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_7.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_8.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_9.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_10.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_11.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_12.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_13.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_14.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_15.png" class="slider-image-size" alt=""/></div>
+                </div>
+            </div>
 
+            <div class="swiper-container swiper--bottom mt-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_16.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_17.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_18.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_19.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_20.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_21.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_22.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_23.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_24.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_25.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_26.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_27.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_28.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_29.png" class="slider-image-size" alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_30.png" class="slider-image-size" alt=""/></div>
+                </div>
+            </div>
+        </div>
 
         <section class="map-section" id="roadmap">
             <div class="container">
@@ -507,6 +576,38 @@
                 }
             }]
         });
+    });
+
+</script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js'></script>
+<script>
+    let SwiperTop = new Swiper('.swiper--top', {
+        spaceBetween: 0,
+        centeredSlides: true,
+        speed: 6000,
+        autoplay: {
+            delay: 1,
+        },
+        loop: true,
+        slidesPerView:'auto',
+        allowTouchMove: false,
+        disableOnInteraction: true
+    });
+
+    let SwiperBottom = new Swiper('.swiper--bottom', {
+        spaceBetween: 0,
+        centeredSlides: true,
+        speed: 6000,
+        autoplay: {
+            delay: 1,
+            reverseDirection: true
+        },
+        loop: true,
+        loopedSlides: 15,
+        slidesPerView:'auto',
+        allowTouchMove: false,
+        disableOnInteraction: true
     });
 
 </script>
