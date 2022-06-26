@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>United Arab Collection</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,12 +20,8 @@
 
         gtag('config', 'G-0GK0W94TCW');
     </script>
-    <title>Chubb Club</title>
-    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="images/favicon.ico">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <title>United Arab Collection</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
     <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -32,42 +30,563 @@
           rel="stylesheet">
     <link href="unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
     <link href="unpkg.com/swiper%407.4.1/swiper-bundle.min.css" rel="stylesheet">
-    <link href="css/main2.css" rel="stylesheet" type="text/css">
     <script src="unpkg.com/regenerator-runtime%400.13.1/runtime.js"></script>
     <script src="peterolson.github.io/BigInteger.js/BigInteger.min.js"></script>
     <script type="text/javascript" src="unpkg.com/web3%401.2.11/dist/web3.min.js"></script>
+
+
+    <!--for bootstrap image slider-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css'>
+    <style>
+        .slider-image-size {
+            height: 250px;
+            width: 250px;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .swiper-container:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-size: 10% 1px;
+            background-position: -50px;
+            background-repeat: repeat-x;
+            position: absolute;
+            left: -10%;
+            top: 40%;
+            -webkit-animation: line-slide 60s forwards infinite linear;
+            animation: line-slide 60s forwards infinite linear;
+            z-index: 1;
+        }
+
+        .swiper-container.swiper--bottom:after {
+            animation-direction: reverse;
+        }
+
+        .swiper-wrapper {
+            transition-timing-function: linear !important;
+            position: relative;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 33px;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            position: relative;
+            overflow: hidden;
+            padding: 0 5px;
+        }
+
+        @-webkit-keyframes line-slide {
+            0% {
+                background-position: -5% 0;
+            }
+            100% {
+                background-position: 100% 0;
+            }
+        }
+
+        @keyframes line-slide {
+            0% {
+                background-position: -5% 0;
+            }
+            100% {
+                background-position: 100% 0;
+            }
+        }
+    </style>
 </head>
 <body>
 <div class="wrapper">
+    <header class="header">
+        <div class="container"><a class="logo" href="index-2.html"><img src="images/logo.png" alt=""></a>
+            <nav class="nav js-nav">
+                <ul class="header-btn">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#game">Game</a></li>
+                    <li><a href="#instructions">Collection </a></li>
+                    <li><a href="#roadmap">ROADMAP</a></li>
+                </ul>
+                <a class="btn" href="#minting" type="button">MINT UAC</a>
+                <a class="btn pl-4 ml-3" href="#minting" type="button">view on opensea</a>
+            </nav>
+            <!--<div class="burger js-burger"><span></span><span></span><span></span></div>-->
+        </div>
+    </header>
     <main class="main">
         <section class="intro-section">
             <div class="container">
-                <div class="intro-links" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true"><a
-                        class="link" href="#" target="_blank">twitter</a><a
-                        class="link" href="#" target="_blank">discord</a></div>
-                <h1 class="main-title" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true"
-                    data-text="Chubb Club">Welcome to Chubb Club</h1>
-                <div class="info" data-aos="fade-up" data-aos-duration="1300" data-aos-once="true">
-                    <div class="info__wrap">
-                        <p class="info__text"><a href="landing.html" style="text-decoration: none; color: #fef876; font-size: 30px;">Enter into Chubb Club</a></p>
+                <div class="intro-links" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true">
+                    <a class="link" href="#" target="_blank">twitter</a>
+                    <a class="link" href="#" target="_blank">instagram</a>
+                    <a class="link" href="#" target="_blank">discord</a>
+                </div>
+                <video width="100%" autoplay loop muted controls poster="images/mint-bg.png">
+                    <source src="video/intro_video.mp4" type="video/mp4">
+                    <source src="video/intro_video.mp4" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <span class="subtitle mt-5" data-aos="fade-up"
+                      data-aos-duration="1250" data-aos-once="true">
+                Welcome to the United Arab Collection
+            </span>
+            </div>
+        </section>
+        <div class="container"><img src="images/header.png" alt="" style="width: 100%;">
+        </div>
+        <section class="mint-section" id="minting">
+            <div class="container">
+                <div class="mint">
+                    <div class="mint__wrap">
+                        <h2 class="mint__title section-title">Join the Club!</h2>
+                        <p class="mint__text">
+                            Total minted: <span class="total-minted">0 / 2500</span></p>
+                        <p class="mint__text">
+                            0.2 Eth + Gas fees <br>Max 5 per Wallet</p>
+                        <form class="form" action="#">
+                            <div class="form__wrap">
+                                <div class="form__row">
+                                    <div class="form__field">
+                                        <button class="form__btn-add input-wrap-left" type="button">-</button>
+                                        <input class="form__input mint-input" type="number" name="#" id="#" value="1">
+                                        <button class="form__btn-add input-wrap-right" type="button">+</button>
+                                    </div>
+                                    <button class="form__btn-value input-five-button" type="button">5</button>
+                                </div>
+                                <button class="form__btn js-popup-open" type="button">Connect wallet</button>
+                                <button class="form__btn mint-button" type="button">MINT</button>
+                            </div>
+                        </form>
+                        <div class="links-wrap"><a class="mint__link"
+                                                   href="#"
+                                                   target="_blank">View Contract </a></div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="immerse-section" id="game">
+            <div class="container">
+                <div class="immerse">
+                    <div class="immerse__wrap">
+                        <div class="immerse__col">
+                            <div class="immerse__img" data-aos="zoom-in" data-aos-duration="1200" data-aos-once="true">
+                                <img src="images/shiaba-img.png" alt=""></div>
+                        </div>
+                        <div class="immerse__col">
+                            <div class="immerse__info">
+                                <h2 class="immerse__title section-title" data-aos="fade-up" data-aos-duration="1000"
+                                    data-aos-once="true">
+                                    UAC (United Arab Collection) is a collection of
+                                    2,500 utility infused pixel art NFTs inspired by the
+                                    UAE.
+                                </h2>
+                                <p class="immerse__text sub-text" data-aos="fade-up" data-aos-duration="1100"
+                                   data-aos-once="true">Each UAC Token is uniquely generated from over
+                                    150 traits, including skin tone, facial expressions,
+                                    hair colour, hair style, headwear, clothing, and
+                                    more.
+                                </p>
+                                <a class="btn primary" href="#" target="_blank"
+                                   data-aos="fade-up" data-aos-duration="1300" data-aos-once="true">Join Discord </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="story-section" id="about">
+            <div class="container">
+                <div class="map-wrap">
+                    <div class="map-block map-block_story">
+                        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true">//
+                            UAC</h2>
+                        <p class="map-desc scroll scroll-wrap" data-aos="fade-up" data-aos-duration="1200"
+                           data-aos-once="true">Our mission is to fashion an exclusive club inspired by the
+                            beauty of Dubai. Our vision is to merge digital and real
+                            world utility to create memorable experiences for an elite
+                            audience.
+                        </p>
+                        <a class="btn primary mt-3" href="#" target="_blank"
+                           data-aos="fade-up" data-aos-duration="1300" data-aos-once="true">Join Twitter </a>
+                    </div>
+                    <div class="map-block">
+                        <img src="images/story.gif" height="100%" width="100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="instruction-section" id="instructions">
+            <h2 class="section-title">Collection</h2>
+            <p class="instruction-text base-text" style="color: #bf9000">
+                2,500 Utility Infused Tokens. UAC is 100% Allowlist Mint.
+            </p>
+        </section>
+
+        <div class="container">
+            <div class="swiper-container swiper--top">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_1.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_2.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_3.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_4.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_5.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_6.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_7.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_8.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_9.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_10.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_11.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_12.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_13.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_14.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_15.png" class="slider-image-size"
+                                                   alt=""/></div>
+                </div>
+            </div>
+
+            <div class="swiper-container swiper--bottom mt-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_16.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_17.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_18.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_19.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_20.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_21.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_22.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_23.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_24.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_25.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_26.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_27.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_28.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_29.png" class="slider-image-size"
+                                                   alt=""/></div>
+                    <div class="swiper-slide"><img src="images/scrolling_images/Scroll_30.png" class="slider-image-size"
+                                                   alt=""/></div>
+                </div>
+            </div>
+        </div>
+
+        <section class="map-section" id="roadmap">
+            <div class="container">
+                <h2 class="section-title mb-5" style="text-align: center;">The Roadmap</h2>
+                <!--<img src="images/roadmap.jpg" width="100%">-->
+                <div class="roadmap-image d-flex justify-content-center align-items-center">
+                    <div class="roadmap-content">
+                        <div class="row mt-5 pt-5 pb-5 mb-5">
+                            <div class="col-4 text-right">
+                            </div>
+                            <div class="col-5">
+                            </div>
+                            <div class="col-3">
+                                <a href="#" class="roadmap-button">The Clubhouse</a>
+                            </div>
+                        </div>
+                        <div class="row mt-5 pt-5 pb-5 mb-5">
+                            <div class="col-4 text-right">
+                                <a href="#" class="roadmap-button"> Allow-list Mint</a>
+                            </div>
+                            <div class="col-2">
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="roadmap-button">Air Drops</a>
+                            </div>
+                        </div>
+                        <div class="row mt-5 pt-5 pb-5 mb-5">
+                            <div class="col-2 text-right">
+                                <a href="#" class="roadmap-button">Charity Auction</a>
+                            </div>
+                            <div class="col-2">
+                            </div>
+                            <div class="col-3">
+                                <a href="#" class="roadmap-button">Dubai Experiences</a>
+                            </div>
+                            <div class="col-2">
+                            </div>
+                            <div class="col-3">
+                                <a href="#" class="roadmap-button">Community Driven Roadmap</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="map-wrap">
+                    <div class="map-block map-block_road">
+                        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true">//
+                            Roadmap</h2>
+                        <p class="map-desc scroll scroll-wrap" data-aos="fade-up" data-aos-duration="1200"
+                           data-aos-once="true"></p>
+                        <div class="map__item" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true">
+                            <span class="map__percent">75%</span>
+                            <p class="map-desc">
+                                Planting Our Flag: Chubb Club Party
+                            </p>
+                        </div>
+                        <div class="map__item" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+                            <span class="map__percent">25%</span>
+                            <p class="map-desc">
+                                The Candy shop is Open: Community rewards for Chubb Club Members enagaged in Discord, Twitter, & Instagram.
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <div class="map-block map-block_fits">
+                        <div class="map" style="margin-top: 105px">
+                            <div class="map__item" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true">
+                                <span class="map__percent">50%</span>
+                                <p class="map-desc">
+                                    Im Sexy And I Know It: Custom merch with your unique Chubb given away to randomly selected holders -
+                                    Begin Development for the Chubb Mart so all holders can soon order theirs too!
+                                </p>
+                            </div>
+                            <div class="map__item" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+                                <span class="map__percent">10%</span>
+                                <p class="map-desc">
+                                    Get Back in the Gym: We can finally afford a gym membership, randomly selected Chubb Club members will get one too!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </section>
+
+
+        <section id="team" class="team-area">
+            <div class="container text-center">
+                <h2 class="section-title text-center mb-5">TEAM</h2>
+
+                <div class="row team-items">
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="images/team-1.jpg" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                </span>
+                                <h4>TONY</h4>
+                                <span>@coolname <br>
+                                    Entrepreneur. Author. <br>
+                                    Slayer of Chris.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="images/team-2.jpg" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                </span>
+                                <h4>MATT</h4>
+                                <span>@coolname<br>
+                                    Commercial product director.<br>
+                                    The voice. Call of Duty Noob.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="images/team-3.jpg" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                </span>
+                                <h4>ELLIOTT</h4>
+                                <span>@coolname<br>
+                                    Tech genius. Engineer.<br>
+                                    Brazilian Jiu Jitsu Master.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row team-items text-center" style="align-items: center; justify-content: center;">
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="images/team-4.jpg" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                </span>
+                                <h4>DR RICARDO</h4>
+                                <span>@coolname<br>
+                                    ENT. Fitness enthusiast.<br>
+                                    Fine dining Connoisseur.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="images/team-5.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                </span>
+                                <h4>BIPLOB</h4>
+                                <span>@coolname<br>
+                                    inventive artist<br>
+                                    best in nft business
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <h2 class="section-title">FAQ</h2>
+                <div class="accordion">
+                    <div class="accordion__item">
+                        <div class="accordion__title-wrap">
+                            <h3 class="accordion__title">What is the mint price?</h3>
+                            <div class="accordion__icon"></div>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="accordion__desc">Mint price will be 0.2 Eth.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title-wrap">
+                            <h3 class="accordion__title">Is there a guaranteed mint allowlist?</h3>
+                            <div class="accordion__icon"></div>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="accordion__desc">Yes, UAC is 100% allowlist mint. 100% supply is reserved
+                                for our community and partnerships through Whitelist,
+                                OG and free mint spots.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title-wrap">
+                            <h3 class="accordion__title">When do you mint?</h3>
+                            <div class="accordion__icon"></div>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="accordion__desc">August 2022.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title-wrap">
+                            <h3 class="accordion__title">What if some winners on the guaranteed mint allowlist
+                                do not mint?</h3>
+                            <div class="accordion__icon"></div>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="accordion__desc">There will be a waitlist of people who will be able to mint
+                                once the whitelist has finished.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title-wrap">
+                            <h3 class="accordion__title">What are the rewards for holding a UAC Token?</h3>
+                            <div class="accordion__icon"></div>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="accordion__desc">Being a UAC NFT holder means you will have access to all
+                                future benefits outlined on the roadmap as well as future
+                                opportunities in the pipeline.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title-wrap">
+                            <h3 class="accordion__title">What are your secondary royalties and how will they be
+                                used?</h3>
+                            <div class="accordion__icon"></div>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="accordion__desc">UAC will receive 5% of all secondary sales. These
+                                proceeds will be used to further develop the team, build
+                                the brand and add value to the community.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title-wrap">
+                            <h3 class="accordion__title">What are your terms?</h3>
+                            <div class="accordion__icon"></div>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="accordion__desc">You can find the terms and conditions <a
+                                    href="video/termscon.pdf" target="_blank" class="accordion__desc"
+                                    style="padding:0 !important">here.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom-section">
+            <div class="container"><img src="images/bottom-bg.png" alt="">
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
             <div class="footer-head"><a class="logo" href="#"><img src="images/logo.png" alt=""></a>
-                <nav class="nav"><span class="nav-title mr-3"></span>
-                    <ul>
-                        <li><a href="#about" style="color: white"></a></li>
-                        <li><a href="#game" style="color: white"></a></li>
-                        <li><a href="#instructions" style="color: white"></a></li>
-                        <li><a href="#roadmap" style="color: white"></a></li>
-                    </ul>
-                </nav>
             </div>
-            <p class="copyright">Copyright ©CHUBBCLUB. All rights reserved. Developed By NFTHULK</p>
+            <p class="copyright" style="font-size: 20px; color: #ede292">Copyright ©UAC. All rights reserved.</p>
+            <p class="copyright" style="font-size: 12px; color: #ede292">Special thanks to our developer partners, NFT
+                Hulk, our moderators and the support
+                from the community, our friends, families, and loved ones.</p>
+            <p class="terms mb-3"><a href="video/termscon.pdf" target="_blank" class="terms"
+                                     style="font-size: 12px; color: #ede292">Terms & Conditions</a></p>
         </div>
     </footer>
     <div class="mask js-mask"></div>
@@ -85,9 +604,96 @@
 </div>
 
 <script src="unpkg.com/swiper%407.4.1/swiper-bundle.min.js"></script>
-<script src="ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/app.js"></script>
-</body>
+<script>
+    $(document).ready(function () {
+        $('.customer-logos').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 1
+                }
+            }]
+        });
 
+        $('.customer-logos-1').slick({
+            slidesToShow: 4,
+            slidesToScroll: -1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 1
+                }
+            }]
+        });
+    });
+
+</script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js'></script>
+<script>
+    let SwiperTop = new Swiper('.swiper--top', {
+        spaceBetween: 0,
+        centeredSlides: true,
+        speed: 6000,
+        autoplay: {
+            delay: 1,
+        },
+        loop: true,
+        slidesPerView: 'auto',
+        allowTouchMove: false,
+        disableOnInteraction: true
+    });
+
+    let SwiperBottom = new Swiper('.swiper--bottom', {
+        spaceBetween: 0,
+        centeredSlides: true,
+        speed: 6000,
+        autoplay: {
+            delay: 1,
+            reverseDirection: true
+        },
+        loop: true,
+        loopedSlides: 15,
+        slidesPerView: 'auto',
+        allowTouchMove: false,
+        disableOnInteraction: true
+    });
+
+    window.onorientationchange = function () {
+        let orientation = window.orientation;
+        switch (orientation) {
+            case 0:
+            case 90:
+            case -90:
+                window.location.reload();
+                break;
+        }
+    };
+
+</script>
+</body>
 </html>
