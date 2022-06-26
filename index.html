@@ -110,6 +110,38 @@
                 background-position: 100% 0;
             }
         }
+
+        .tooltip{
+            padding: .7rem 1.7rem;
+            background-color: #000000;
+            color: gold;
+            font-family: sans-serif;
+            letter-spacing: 1px;
+            display: none;
+            position: relative;
+            border-radius: 5px;
+            margin-top: 15px;
+            opacity: 0;
+            transition:all 155ms ease-in-out;
+        }
+
+        .tooltip::before{
+            content:"";
+            width: 0;
+            height: 0;
+            border-left: 13px solid transparent;
+            border-right: 13px solid transparent;
+            border-bottom: 15px solid #000000;
+            position:absolute;
+            top: -15px;
+            left: 50%;
+            transform:translateX(-50%);
+        }
+
+        .roadmap-button:hover~.tooltip{
+            display: inline-block;
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -324,32 +356,70 @@
                             <div class="col-5">
                             </div>
                             <div class="col-3">
-                                <a href="#" class="roadmap-button">The Clubhouse</a>
+                                <a href="#" class="roadmap-button">
+                                    The Clubhouse
+                                </a>
+                                <div class="tooltip">
+                                    There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered
+                                    alteration in some form, by injected humour, or
+                                    randomised words which don't look even slightly believable.
+                                </div>
                             </div>
                         </div>
                         <div class="row mt-5 pt-5 pb-5 mb-5">
                             <div class="col-4 text-right">
                                 <a href="#" class="roadmap-button"> Allow-list Mint</a>
+                                <div class="tooltip">
+                                    There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered
+                                    alteration in some form, by injected humour, or
+                                    randomised words which don't look even slightly believable.
+                                </div>
                             </div>
                             <div class="col-2">
                             </div>
                             <div class="col-6">
                                 <a href="#" class="roadmap-button">Air Drops</a>
+                                <div class="tooltip">
+                                    There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered
+                                    alteration in some form, by injected humour, or
+                                    randomised words which don't look even slightly believable.
+                                </div>
                             </div>
                         </div>
                         <div class="row mt-5 pt-5 pb-5 mb-5">
                             <div class="col-2 text-right">
                                 <a href="#" class="roadmap-button">Charity Auction</a>
+                                <div class="tooltip">
+                                    There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered
+                                    alteration in some form, by injected humour, or
+                                    randomised words which don't look even slightly believable.
+                                </div>
                             </div>
                             <div class="col-2">
                             </div>
                             <div class="col-3">
                                 <a href="#" class="roadmap-button">Dubai Experiences</a>
+                                <div class="tooltip">
+                                    There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered
+                                    alteration in some form, by injected humour, or
+                                    randomised words which don't look even slightly believable.
+                                </div>
                             </div>
                             <div class="col-2">
                             </div>
                             <div class="col-3">
                                 <a href="#" class="roadmap-button">Community Driven Roadmap</a>
+                                <div class="tooltip">
+                                    There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered
+                                    alteration in some form, by injected humour, or
+                                    randomised words which don't look even slightly believable.
+                                </div>
                             </div>
                         </div>
                     </div>
