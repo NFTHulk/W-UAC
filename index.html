@@ -39,10 +39,46 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!------ Include the above in your HEAD tag ---------->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+
 
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link rel='stylesheet'
+          href='https://cdn.jsdelivr.net/gh/andreivictor/bootstrap-tooltip-custom-class@1.1.0/bootstrap-v4/popover/dist/css/bootstrap-popover-custom-class.css'>
+    <link rel='stylesheet'
+          href='https://cdn.jsdelivr.net/gh/andreivictor/bootstrap-tooltip-custom-class@1.1.0/bootstrap-v4/tooltip/dist/css/bootstrap-tooltip-custom-class.css'>
+
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <style>
+        .popover-custom .popover-header {
+            background: #000000 !important;
+            color: gold !important;
+        }
+
+        .popover-custom.bs-popover-bottom .popover-header::before, .popover-custom.bs-popover-auto[x-placement^=bottom] .popover-header::before {
+            display: none;
+        }
+
+        .popover-custom.bs-popover-bottom > .arrow::after, .popover-custom.bs-popover-auto[x-placement^=bottom] > .arrow::after {
+            border-bottom-color: #000000 !important;
+        }
+    </style>
+    <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/andreivictor/bootstrap-tooltip-custom-class@1.1.0/bootstrap-v4/popover/dist/js/bootstrap-popover-custom-class.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/andreivictor/bootstrap-tooltip-custom-class@1.1.0/bootstrap-v4/tooltip/dist/js/bootstrap-tooltip-custom-class.js'></script>
+    <script>
+        $(document).ready(function () {
+            $("[data-toggle=popover]").popover();
+
+            $('.js-btn-popover--custom').popover({
+                customClass: 'popover-custom'
+            });
+        });
+    </script>
+
     <style>
         .slider-image-size {
             height: 250px;
@@ -356,113 +392,48 @@
                             <div class="col-5">
                             </div>
                             <div class="col-3">
-                                <a href="#" class="roadmap-button">
+                                <button class="roadmap-button js-btn-popover--custom" data-toggle="popover" data-trigger="focus" data-placement="bottom" title="Custom popover example" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                                     The Clubhouse
-                                </a>
-                                <div class="tooltip">
-                                    There are many variations of passages of Lorem
-                                    Ipsum available, but the majority have suffered
-                                    alteration in some form, by injected humour, or
-                                    randomised words which don't look even slightly believable.
-                                </div>
+                                </button>
                             </div>
                         </div>
                         <div class="row mt-5 pt-5 pb-5 mb-5">
                             <div class="col-4 text-right">
-                                <a href="#" class="roadmap-button"> Allow-list Mint</a>
-                                <div class="tooltip">
-                                    There are many variations of passages of Lorem
-                                    Ipsum available, but the majority have suffered
-                                    alteration in some form, by injected humour, or
-                                    randomised words which don't look even slightly believable.
-                                </div>
+                                <button class="roadmap-button js-btn-popover--custom" data-toggle="popover" data-trigger="focus" data-placement="bottom" title="Custom popover example" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                    Allow-list Mint
+                                </button>
                             </div>
                             <div class="col-2">
                             </div>
                             <div class="col-6">
-                                <a href="#" class="roadmap-button">Air Drops</a>
-                                <div class="tooltip">
-                                    There are many variations of passages of Lorem
-                                    Ipsum available, but the majority have suffered
-                                    alteration in some form, by injected humour, or
-                                    randomised words which don't look even slightly believable.
-                                </div>
+                                <button class="roadmap-button js-btn-popover--custom" data-toggle="popover" data-trigger="focus" data-placement="bottom" title="Custom popover example" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                    Air Drops
+                                </button>
                             </div>
                         </div>
                         <div class="row mt-5 pt-5 pb-5 mb-5">
                             <div class="col-2 text-right">
-                                <a href="#" class="roadmap-button">Charity Auction</a>
-                                <div class="tooltip">
-                                    There are many variations of passages of Lorem
-                                    Ipsum available, but the majority have suffered
-                                    alteration in some form, by injected humour, or
-                                    randomised words which don't look even slightly believable.
-                                </div>
+                                <button class="roadmap-button js-btn-popover--custom" data-toggle="popover" data-trigger="focus" data-placement="bottom" title="Custom popover example" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                    Charity Auction
+                                </button>
                             </div>
                             <div class="col-2">
                             </div>
                             <div class="col-3">
-                                <a href="#" class="roadmap-button">Dubai Experiences</a>
-                                <div class="tooltip">
-                                    There are many variations of passages of Lorem
-                                    Ipsum available, but the majority have suffered
-                                    alteration in some form, by injected humour, or
-                                    randomised words which don't look even slightly believable.
-                                </div>
+                                <button class="roadmap-button js-btn-popover--custom" data-toggle="popover" data-trigger="focus" data-placement="bottom" title="Custom popover example" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                    Dubai Experiences
+                                </button>
                             </div>
                             <div class="col-2">
                             </div>
                             <div class="col-3">
-                                <a href="#" class="roadmap-button">Community Driven Roadmap</a>
-                                <div class="tooltip">
-                                    There are many variations of passages of Lorem
-                                    Ipsum available, but the majority have suffered
-                                    alteration in some form, by injected humour, or
-                                    randomised words which don't look even slightly believable.
-                                </div>
+                                <button class="roadmap-button js-btn-popover--custom" data-toggle="popover" data-trigger="focus" data-placement="bottom" title="Custom popover example" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                    Community Driven Roadmap
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--<div class="map-wrap">
-                    <div class="map-block map-block_road">
-                        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true">//
-                            Roadmap</h2>
-                        <p class="map-desc scroll scroll-wrap" data-aos="fade-up" data-aos-duration="1200"
-                           data-aos-once="true"></p>
-                        <div class="map__item" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true">
-                            <span class="map__percent">75%</span>
-                            <p class="map-desc">
-                                Planting Our Flag: Chubb Club Party
-                            </p>
-                        </div>
-                        <div class="map__item" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
-                            <span class="map__percent">25%</span>
-                            <p class="map-desc">
-                                The Candy shop is Open: Community rewards for Chubb Club Members enagaged in Discord, Twitter, & Instagram.
-                            </p>
-                        </div>
-
-
-                    </div>
-                    <div class="map-block map-block_fits">
-                        <div class="map" style="margin-top: 105px">
-                            <div class="map__item" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true">
-                                <span class="map__percent">50%</span>
-                                <p class="map-desc">
-                                    Im Sexy And I Know It: Custom merch with your unique Chubb given away to randomly selected holders -
-                                    Begin Development for the Chubb Mart so all holders can soon order theirs too!
-                                </p>
-                            </div>
-                            <div class="map__item" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
-                                <span class="map__percent">10%</span>
-                                <p class="map-desc">
-                                    Get Back in the Gym: We can finally afford a gym membership, randomly selected Chubb Club members will get one too!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
             </div>
         </section>
 

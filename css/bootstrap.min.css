@@ -5658,7 +5658,7 @@ button.close {
     line-break: auto;
     font-size: .875rem;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: #000;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: .3rem
@@ -5699,7 +5699,7 @@ button.close {
 
 .bs-popover-auto[x-placement^=top] .arrow::after, .bs-popover-top .arrow::after {
     bottom: 1px;
-    border-top-color: #fff
+    border-top-color: #000
 }
 
 .bs-popover-auto[x-placement^=right], .bs-popover-right {
@@ -5724,7 +5724,7 @@ button.close {
 
 .bs-popover-auto[x-placement^=right] .arrow::after, .bs-popover-right .arrow::after {
     left: 1px;
-    border-right-color: #fff
+    border-right-color: #000
 }
 
 .bs-popover-auto[x-placement^=bottom], .bs-popover-bottom {
@@ -5788,9 +5788,9 @@ button.close {
 .popover-header {
     padding: .5rem .75rem;
     margin-bottom: 0;
-    font-size: 1rem;
-    color: inherit;
-    background-color: #f7f7f7;
+    font-size: 1.3rem !important;
+    color: gold;
+    background-color: #000 !important;
     border-bottom: 1px solid #ebebeb;
     border-top-left-radius: calc(.3rem - 1px);
     border-top-right-radius: calc(.3rem - 1px)
@@ -5802,7 +5802,8 @@ button.close {
 
 .popover-body {
     padding: .5rem .75rem;
-    color: #212529
+    font-size: 1.1rem !important;
+    color: #212529 !important;
 }
 
 .carousel {

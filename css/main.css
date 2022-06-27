@@ -362,9 +362,6 @@ html {
 body {
     background-color: #000000;
     font-family: "Rajdhani", sans-serif;
-    height: 100vh;
-    height: -webkit-calc(var(--vh, 1vh) * 100);
-    height: calc(var(--vh, 1vh) * 100);
     font-size: 1.6rem;
     color: #FFFFFF;
     position: relative;
@@ -416,21 +413,7 @@ body.overflow {
     width: 1px;
 }
 
-@font-face {
-    font-family: 'SPACE MISSION';
-    src: url("../fonts/SpaceMission-rgyw9.eot");
-    src: local("☺"), url("../fonts/SpaceMission-rgyw9.woff") format("woff"), url("../fonts/SpaceMission-rgyw9.ttf") format("truetype"), url("../fonts/SpaceMission-rgyw9.html") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url("../fonts/Montserrat-Thin.html") format("woff2"), url("../fonts/Montserrat-Thin-2.html") format("woff");
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
 
 .btn {
     color: #BF9000;
@@ -1136,51 +1119,6 @@ body.overflow {
     display: none;
 }
 
-.popup {
-    position: fixed;
-    z-index: 200;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    display: none;
-}
-
-.popup__wrap {
-    position: relative;
-    background: #0f1317;
-    border: 1px solid #10fdff;
-    border-radius: 2px;
-    padding: 21px 26px 16px 26px;
-}
-
-.popup__close {
-    position: absolute;
-    top: 28px;
-    right: 28px;
-    width: 17px;
-    height: 17px;
-    background-position: center;
-    background-size: contain;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 17 17' fill='none'%3E%3Cpath d='M1 1L16 16' stroke='%2310FDFF' stroke-width='1.5'/%3E%3Cpath d='M16 1L1 16' stroke='%2310FDFF' stroke-width='1.5'/%3E%3C/svg%3E%0A");
-}
-
-.popup__close:hover {
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-.popup__title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 31px;
-    color: #10fdff;
-    margin-bottom: 23px;
-    text-align: center;
-}
-
 .connect {
     margin-bottom: 10px;
     cursor: pointer;
@@ -1276,7 +1214,6 @@ body.overflow {
 
 .header .btn {
     max-width: 150px;
-    overflow: none;
     -webkit-font-smoothing: inherit;
     -moz-osx-font-smoothing: inherit;
     -webkit-appearance: none;
@@ -1308,8 +1245,6 @@ body.overflow {
     right: -100%;
     height: -webkit-calc(100vh - 4.5rem);
     height: calc(100vh - 4.5rem);
-    height: -webkit-calc(var(--vh, 1vh) * 100 - 4.5rem);
-    height: calc(var(--vh, 1vh) * 100 - 4.5rem);
     background-color: #000000;
     z-index: 10;
     -webkit-transition: all 0.3s ease;
@@ -1913,7 +1848,6 @@ body.overflow {
     margin-bottom: 18px;
     height: 235px;
     width: 10000rem;
-    background-repeat: x-repeat;
     background-size: contain;
     -webkit-transform: translateX(0px);
     -ms-transform: translateX(0px);
